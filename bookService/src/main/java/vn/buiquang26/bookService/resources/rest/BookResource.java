@@ -20,7 +20,7 @@ public class BookResource {
         this.bookService = bookService;
     }
 
-    @GetMapping("/")
+    @GetMapping
     public ResponseEntity<List<Book>> getBooks() {
         return ResponseEntity.ok(bookService.getBooks());
     }
