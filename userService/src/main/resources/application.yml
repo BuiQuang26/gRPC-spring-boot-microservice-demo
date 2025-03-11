@@ -1,12 +1,12 @@
 spring:
   application:
-    name: bookService
+    name: userService
 server:
-  port: 8082
+  port: 8081
 eureka:
   instance:
-    appname: bookService
     prefer-ip-address: true
+    appname: userService
   client:
     register-with-eureka: true
     fetch-registry: true
